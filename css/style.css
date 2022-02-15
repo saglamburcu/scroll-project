@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+/* BACKGROUND IMAGE */
+#home {
+  background-image: url(/images/hero-bcg.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+}
+
+@media screen and (min-width: 1300px) {
+
+  /* NAVBAR */
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    z-index: 40;
+  }
+
+  .fixed-navbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  }
+
+  nav {
+    display: flex;
+    padding: 10px 100px;
+    width: 1200px;
+    height: 60px;
+  }
+
+  .head-container {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .navbar-container img {
+    width: 60px;
+    height: auto;
+    margin-right: auto;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .link-container {
+    display: flex;
+   
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    width: 450px;
+    justify-content: space-evenly;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .fixed-navbar .menu li a {
+    color: hsl(209, 61%, 16%);
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  /* NAVBAR */
+  .navbar-container {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 40;
+  }
+
+  .fixed-navbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  }
+
+  nav {
+    padding: 10px 100px;
+    width: 1200px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .navbar-container img {
+    width: 60px;
+    height: auto;
+    margin-right: auto;
+  }
+
+  .menu-btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    color: rgb(62, 153, 189);
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .link-container {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    overflow: hidden; 
+  }
+
+  .link-container-show {
+    height: 200px;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: block;
+    background-color: #fff;
+    line-height: 60px;
+  }
+  
+  .menu li {
+    padding-left: 0px;
+    padding-bottom: 15px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: rgb(62, 153, 189);
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+  }
+
+  
+}
+
+/* HOME CONTENT */
+.content-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7));
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  z-index: 20;
+}
+
+.content {
+  width: 700px;
+  height: 200px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.content p {
+  color: #fff;
+}
+
+.content button {
+  width: 180px;
+  font-size: 14px;
+  padding: 10px 2px;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* ABOUT US - OUR SERVICES - FEATURED TOURS */
+#about,
+#services,
+#tours {
+  height: 85vh;
+  background-color: rgb(236, 236, 238);
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#services {
+  background-color: #fff;
+}
+
+#about h1,
+#services h1,
+#tours h1 {
+  color: hsl(209, 61%, 16%);
+}
+
+#about span,
+#services span,
+#tours span {
+  color: rgb(62, 153, 189);
+}
+
+/* FOOTER */
+footer {
+  background-color: hsl(209, 61%, 16%);
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+/* TOP LINK*/
+.top-link {
+  background-color: rgb(62, 153, 189);
+  color: #fff;
+  font-size: 40px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  visibility: hidden;
+}
+
+.show-toplink {
+  visibility: visible;
+}
+
